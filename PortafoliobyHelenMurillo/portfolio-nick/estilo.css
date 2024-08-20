@@ -58,12 +58,14 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(93, 139, 167, 0.8), rgb(44, 45, 65)),
-    url(img/fondo.jpg);
+    url(img/lenguajes-de-programacion-mas-usados-1.jpg);
     background-size: cover;
     height: 100vh;
     color: #37B7C3;
     display: flex;
     align-items: center;
+    position: static;
+    z-index: -100;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -80,7 +82,7 @@ html{
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
@@ -96,7 +98,7 @@ html{
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -126,15 +128,17 @@ html{
 }
 .sobremi .contenido-seccion p{
     font: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
+    line-height: 40px;
+    margin-bottom: 40px;
 }
 .sobremi .contenido-seccion p span{
     color: #37B7C3;
     font-weight: bold;
+    font-size: 30px;
 }
 .sobremi .fila{
     display: flex;
+
 }
 .sobremi .fila .col
 {
@@ -144,12 +148,12 @@ html{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
 }
-.sobremi .fila .col ul{
-    list-style: none;
-}
+
+
 .sobremi .fila .col ul li{
-    margin: 12px 0;
+    margin: px 0;
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
@@ -161,14 +165,16 @@ html{
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
+    
 }
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
+    width: 50vi;
+    height: 30vh;
     background-color: #088395;
     border-radius: 10px;
     margin: 0 15px 15px 0;
@@ -177,14 +183,24 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+}
+  .vision{
     
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+        width: 100%; /* Ajusta el ancho del contenedor según necesites */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 20px; /* Añade espacio dentro del contenedor alrededor del texto */
+        text-align: justify; /* Centra el texto horizontalmente */
+        line-height: 40px;
+        font-size: 20px;
+    }
+    
+
+    
+.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #030c27;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
+
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -409,14 +425,14 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #088395;
+    color: #dde8ea;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #088395;
+    color: #0b0c0c;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
@@ -470,7 +486,7 @@ html{
 }
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252A2E;
+    background-color: #030c27;
     color: #fff;
     padding: 50px 20px;
 }
@@ -499,14 +515,26 @@ html{
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
+    opacity: 70%;
 }
+.no-estilo {
+    text-decoration: none;  /* Quita el subrayado */
+    color: inherit;         /* Usa el color del texto del elemento padre */
+    /* Si quieres quitar cualquier estilo de color, usa color: inherit; */
+}
+
+.no-estilo:hover {
+    color: inherit;         /* Mantén el color sin cambios al pasar el cursor */
+    text-decoration: none;  /* Mantén el subrayado desactivado */
+}
+
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(28, 172, 182, 0.92), rgba(28, 182, 177, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
